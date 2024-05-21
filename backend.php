@@ -10,9 +10,13 @@
     <?php
     $user_name = $_GET["user_name"];
     $password = $_GET["password"];
-    echo "<h1>Welcome to the Web App</h1>";
-    echo "<h2>$user_name</h2>";
 
+    if($user_name == 'mkayf' && $password == 'hello123'){
+        echo "<h1>Welcome to the Web <br> $user_name</h1>";
+    }
+    else{
+        echo "<h1>Wrong credentials</h1>";
+    }
 
     ?>
 </body>
